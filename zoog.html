@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+    <script>
+      function setup() {
+        createCanvas(800,800);
+      }
+      
+      function draw() {
+        fill("grey")
+        strokeWeight(2)
+        ellipse(330,490,250,150)
+        ellipse(330,85,220,150)
+        rect(200,161,270,270)
+        rect(167,175,30,170,50)
+        rect(473,175,30,170,50)
+        strokeWeight(1.5)
+        rect(201,162,130,70)
+        rect(201,233,268,70)
+        rect(201,303,268,60)
+        rect(415,233,55,197)
+        rect(200,233,55,197)
+        fill("limegreen")
+        ellipse(260,200,30,30)
+        ellipse(290,70,40,40)
+        ellipse(355,70,40,40)
+        fill("yellow")
+        ellipse(300,200,30,30)
+        fill("red")
+        ellipse(220,200,30,30)
+        
+        
+        
+      }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/marciaq7296/p5js/blob/gh-pages/zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
