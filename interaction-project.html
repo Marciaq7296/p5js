@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+    
+    <script>
+      //here are the variables for the size of the cirlces
+      var a;
+      var b;
+      
+        function setup() {
+          createCanvas(800,600);
+          a = -70;
+          b = -70;
+        }
+
+        function draw() {
+          
+        }
+        function mouseMoved(){
+          //the circles are showed and filled and the sizes are changed when the mouse is moved
+          fill(mouseX/2,mouseY/2,mouseX+mouseY)//depending on where the mouse is the colors change
+          ellipse(mouseX,mouseY,a,b);   
+          ellipse(mouseY,mouseX,a,b);
+          ellipse(width-mouseX,height-mouseY,a,b);     
+          b++;
+          a++;
+          
+        }  
+      
+      function mousePressed(){
+        background(mouseX/2,mouseY/2,mouseX+mouseY);
+        if (mouseIsPressed)
+          a--;
+          b--;
+          a--;
+          b--;
+      }
+      
+      function mouseDragged(){
+        
+        background(mouseX/2,mouseY/2,mouseX+mouseY);  
+        a--;
+        b--;
+        a--;
+        b--;
+      }
+      
+      function keyPressed(){
+        a--;
+        b--;
+        a--;
+        b--;
+      }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/marciaq7296/p5js/blob/gh-pages/interaction-project.html?footer=0"></script>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+  
+
+</html>
